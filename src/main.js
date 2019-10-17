@@ -2,10 +2,11 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 
-import vpui from '../packages';
+import vpui from './index';
 
-Vue.config.productionTip = false;
 Vue.use(vpui);
+Vue.config.productionTip = false;
+
 
 new Vue({
   router,

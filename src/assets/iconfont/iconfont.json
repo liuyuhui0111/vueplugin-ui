@@ -1,0 +1,30 @@
+{
+  "id": "1463731",
+  "name": "vueplugin",
+  "font_family": "ivue",
+  "css_prefix_text": "ivue-icon",
+  "description": "vue常用组件字体库",
+  "glyphs": [
+    {
+      "icon_id": "10574106",
+      "name": "返回顶部",
+      "font_class": "fanhuidingbu",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "10574109",
+      "name": "在线客服",
+      "font_class": "zaixiankefu",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "10578446",
+      "name": "咨询专家",
+      "font_class": "zixunzhuanjia",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    }
+  ]
+}

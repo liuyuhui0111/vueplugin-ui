@@ -25,17 +25,17 @@ module.exports = {
       // 移除 prefetch 插件
       config.plugins.delete('prefetch');
       // 增加package目录编译
-      config.module
-      .rule('js')
-      .include
-        .add('/packages')
-        .end()
-      .use('babel')
-        .loader('babel-loader')
-        .tap(options => {
-          // 修改它的选项...
-          return options
-        })
+      // config.module
+      // .rule('js')
+      // .include
+      //   .add('/packages')
+      //   .end()
+      // .use('babel')
+      //   .loader('babel-loader')
+      //   .tap(options => {
+      //     // 修改它的选项...
+      //     return options
+      //   })
 
     },
     configureWebpack: config => {
@@ -45,9 +45,13 @@ module.exports = {
       }
     },
     css: {
+      extract: false,
       loaderOptions: { // 向 CSS 相关的 loader 传递选项
-        less: {
-          javascriptEnabled: true
+        scss: {
+          // prependData: 
+          //   `@import "~@/assets/styles/base.scss";
+          //   @import "~@/assets/styles/theme.scss";`
+            
         }
       }
     }
