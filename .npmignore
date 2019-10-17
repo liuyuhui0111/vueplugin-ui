@@ -1,0 +1,11 @@
+# npm 发布忽略目录
+
+node_modules/
+src/
+packages/
+public/
+
+.npmignore
+babel.config.js
+package-lock.json
+vue.config.js
